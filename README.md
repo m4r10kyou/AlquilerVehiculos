@@ -2,10 +2,10 @@
 Proyecto DDS
 
 El proyecto consiste en desarrollar una aplicación utilizando :
- •  Patrones	de	diseño	(mínimo	3	patrones),	 se	valorará	aplicar	dos	o	más	patrones	de	forma	
-conjunta	
-• refactorización	(mínimo	5	refactorings)	
-• pruebas	de	software	unitarias	(mínimo	las	pruebas	aplicadas	a	los	refactorings	realizados).	
+ 
+ •  Patrones	de	diseño	(mínimo	3	patrones),	 se	valorará	aplicar	dos	o	más	patrones	de	forma	conjunta	
+ • refactorización	(mínimo	5	refactorings)	
+ • pruebas	de	software	unitarias	(mínimo	las	pruebas	aplicadas	a	los	refactorings	realizados).	
 
 Primeramente tenemos pensado el singleton, fachada, método plantilla, iterator.
 
@@ -27,4 +27,7 @@ Se trata de una aplicación, al menos, la base de ella, del proyecto de Ingener�
   6. Pruebas con JUnit. Por cada método probado, incluir el código, los casos de prueba diseñados, y los errores detectados con las pruebas. Se pueden adjuntar imágenes para relatar los resultados
   7. Manual	de Instalación (si es necesario).
   8. Manual de Usuario (si	es necesario).
+ 
+
+Fecha Límite : 30 de Mayo
 

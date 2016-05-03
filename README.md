@@ -7,7 +7,7 @@ El proyecto consiste en desarrollar una aplicación utilizando :
  • refactorización	(mínimo	5	refactorings)	
  • pruebas	de	software	unitarias	(mínimo	las	pruebas	aplicadas	a	los	refactorings	realizados).	
 
-Primeramente tenemos pensado el singleton, fachada, método plantilla, iterator.
+Primeramente tenemos pensado el singleton, fachada, método plantilla, iterator o decorador.
 
 La aplicación	a	desarrollar	podrá	ser de alguno	del siguiente tipo:
 -> Aplicación de Gestión.

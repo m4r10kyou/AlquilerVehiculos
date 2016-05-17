@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorListadoReservasSucursal">
+   <children>
+      <TabPane layoutY="50.0" prefHeight="350.0" prefWidth="542.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <tabs>
+            <Tab fx:id="tabRecogida" closable="false" text="Recogida">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <TableView fx:id="tablaRec" editable="true" layoutX="10.0" layoutY="9.0" prefHeight="258.0" prefWidth="522.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="9.0">
+                          <columns>
+                              <TableColumn fx:id="idRec" prefWidth="20.0" text="Id." />
+                            <TableColumn fx:id="fechaRecogidaRec" maxWidth="3000.0" prefWidth="100.0" text="Fecha recogida" />
+                              <TableColumn fx:id="lugarRecogidaRec" prefWidth="100.0" text="Lugar recogida" visible="false" />
+                              <TableColumn fx:id="fechaDevolucionRec" maxWidth="3000.0" prefWidth="100.0" text="Fecha devolución" />
+                              <TableColumn fx:id="lugarDevolucionRec" prefWidth="100.0" text="Lugar devolución" visible="false" />
+                              <TableColumn fx:id="modalidadRec" prefWidth="75.0" text="Modalidad" visible="false" />
+                            <TableColumn fx:id="clienteRec" maxWidth="6000.0" text="Cliente" />
+                              <TableColumn fx:id="categoriaRec" prefWidth="75.0" text="Categoría" visible="false" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabDevolucion" closable="false" text="Devolución">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <TableView fx:id="tablaDev" editable="true" layoutY="5.0" prefHeight="257.0" prefWidth="522.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="idDev" prefWidth="20.0" text="Id." />
+                              <TableColumn fx:id="fechaRecogidaDev" maxWidth="3000.0" prefWidth="100.0" text="Fecha recogida" />
+                              <TableColumn fx:id="lugarRecogidaDev" prefWidth="100.0" text="Lugar recogida" visible="false" />
+                              <TableColumn fx:id="fechaDevolucionDev" maxWidth="3000.0" prefWidth="100.0" text="Fecha devolución" />
+                              <TableColumn fx:id="lugarDevolucionDev" prefWidth="100.0" text="Lugar devolución" visible="false" />
+                              <TableColumn fx:id="modalidadDev" prefWidth="75.0" text="Modalidad" visible="false" />
+                              <TableColumn fx:id="clienteDev" maxWidth="6000.0" text="Cliente" />
+                              <TableColumn fx:id="categoriaDev" prefWidth="75.0" text="Categoría" visible="false" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button fx:id="cerrar" layoutX="488.0" layoutY="361.0" mnemonicParsing="false" prefWidth="80.0" text="Cerrar" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <HBox alignment="CENTER" layoutY="7.0" prefHeight="47.0" prefWidth="430.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+         <children>
+            <ComboBox fx:id="sucursalRec" prefHeight="29.0" prefWidth="510.0" promptText="Sucursal" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
